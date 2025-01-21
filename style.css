@@ -115,11 +115,12 @@ section{
     font-weight: 400;
 }
 
-.value{
+.value-to-convert, .value-already-converted{
     color: #555;
     font-size: 20px;
     font-weight: 700;
 }
+
 
 
 
