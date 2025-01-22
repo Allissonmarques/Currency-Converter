@@ -31,8 +31,34 @@ if(convertedCurrency.value == "bitcoin"){
 
 valueToConvert.innerHTML = new Intl.NumberFormat("pt-br", { style: "currency", currency: "BRL" }).format(enterValuesInput)
 
+}
 
+function changeCurrency(){
+    const nameCoin = document.querySelector(".name-coin-converted")
+    const flagCoin = document.querySelector(".image-flag-coin")
+
+if(convertedCurrency.value == "dolar"){
+    nameCoin.innerHTML = "US Dollar"
+    flagCoin.src = "./assets/usa.png"
+}
+
+if(convertedCurrency.value == "euro"){
+    nameCoin.innerHTML = "Euro"
+    flagCoin.src = "./assets/euro.png"
+}
+
+if(convertedCurrency.value == "libra"){
+    nameCoin.innerHTML = "Pound Sterling"
+    flagCoin.src = "./assets/libra.png"
+}
+
+if(convertedCurrency.value == "bitcoin"){
+    nameCoin.innerHTML = "Bitcoin"
+    flagCoin.src = "./assets/bitcoin.png"
+}
+convertValue()
 
 }
 
+convertedCurrency.addEventListener("change", changeCurrency)
 convertButton.addEventListener("click", convertValue)

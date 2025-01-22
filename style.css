@@ -109,7 +109,7 @@ section{
     gap: 4px;
 }
 
-.coin{
+.name-coin-to-convert, .name-coin-converted{
     color: #777;
     font-size: 14px;
     font-weight: 400;
